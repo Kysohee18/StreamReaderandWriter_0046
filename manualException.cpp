@@ -1,4 +1,4 @@
-#include < iostream>
+#include <iostream>
 using namespace std;
 
 int main () 
@@ -8,8 +8,13 @@ int main ()
         throw 0.5; // melemparkan sebuah integer maka
         cout << "pernyataan tidaka akan dieksekusi" << endl;
     }    
-    catch ( int a) [
+    catch ( int a) {
         // blok ini akan dieksekusi 
-        cout << "pengecualiak akan dieksekusi" << endl;
-    ]
+        cout << "pengecualian akan dieksekusi" << endl;
+    }
+    catch (...) {
+        /*jika selain integer maka block ini akan dieksekusi*/
+        cout <<"default pengecualian diexsekusi"<<endl;
+    }
+    return 0;
 }
