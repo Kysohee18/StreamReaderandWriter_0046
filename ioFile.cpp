@@ -1,5 +1,5 @@
 #include <iostream>
-#include <iostream>
+#include <fstream>
 #include <string>
 using namespace std;
 
@@ -13,5 +13,9 @@ int main () {
     //operasi file dalam mode menulis
     ofstream outfile;
     // menunjuk ke sebuah nama file untu membuka 
+    outfile.open("contohfile.txt");
+
+    cout << ">= Menulis file, \'q\' untuk keluar" <<endl;
+
 
 }
